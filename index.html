@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>金汉亭</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.3.js"></script>
+
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!--头部导航部分-->
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top nav-zf">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list"
+            aria-expanded="false">
+            <span class="sr-only">切换菜单</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <i class="logo"></i>
+          </a>
+        </div>
+        <div id="nav_list" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-topNav">
+            <li class="active text-center">
+              <a href="index.html">汉亭首页</a>
+            </li>
+            <li class="text-center">
+              <a href="origin.html">品牌起源</a>
+            </li>
+            <li class="text-center"><a href="news.html">新闻资讯</a></li>
+            <li class="text-center"><a href="product.html">精品菜肴</a></li>
+            <li class="text-center"><a href="service.html">合作加盟</a></li>
+            <li class="text-center">
+              <a href="contact_us.html">联系我们</a>
+            </li>
+          </ul>
+          <ul class="nav  navbar-right hidden-sm nav-myRight">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--banner轮播部分-->
+  <section id="main_ad" class="carousel slide" data-ride="carousel">
+    <!-- 下面的小点点，活动指示器 -->
+    <ol class="carousel-indicators">
+      <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+      <li data-target="#main_ad" data-slide-to="1"></li>
+      <li data-target="#main_ad" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播项 -->
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <a href="#">
+          <img src="img/banner1.jpg" alt="首页轮播图1" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img src="img/banner2.jpg" alt="首页轮播图2" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img src="img/banner3.jpg" alt="首页轮播图3" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--特色展示部分-->
+  <section id="feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center feature_top">
+          <img src="img/feature_top.png" alt="特色栏目标题" />
+        </div>
+      </div>
+      <div class="row">
+        <!-- pc端部分 -->
+        <div id="feature_silder" class="picBtnTop">
+          <div class="hd">
+            <ul>
+              <li>
+                <p>01</p>
+                <img src="img/feature_pic1.jpg" alt="特色栏目侧边缩略图1" />
+              </li>
+              <li>
+                <p>02</p>
+                <img src="img/feature_pic2.jpg" alt="特色栏目侧边缩略图2" />
+              </li>
+              <li>
+                <p>03</p>
+                <img src="img/feature_pic3.jpg" alt="特色栏目侧边缩略图3" />
+              </li>
+            </ul>
+          </div>
+          <div class="bd">
+            <ul>
+              <li>
+                <div class="pic">
+                  <a href="product.html" target="_blank"><img src="img/feature_pic1.jpg" alt="特色栏目主内容1" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="pic">
+                  <a href="product.html" target="_blank"><img src="img/feature_pic2.jpg" alt="特色栏目主内容2" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="pic">
+                  <a href="product.html" target="_blank"><img src="img/feature_pic3.jpg" alt="特色栏目主内容3" /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /pc端部分 -->
+
+        <!-- 手机端部分 -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/feature_pic1.jpg" alt="特色栏目主内容1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/feature_pic2.jpg" alt="特色栏目主内容1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/feature_pic3.jpg" alt="特色栏目主内容1" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- /手机端部分 -->
+      </div>
+      <div class="row">
+        <div class="col-md-12 feature_bot">
+          <a href="product.html" class="btn btn-danger" target="_blank">
+            了解更多
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--企业渊源-->
+  <section class="origin">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center origin_top mgt50 mgb40">
+          <img src="img/index_origin.png" alt="品牌起源标题" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 origin_content text-center mgb40">
+          <!-- pc端 -->
+          <img src="img/origin_content.jpg" class="hidden-xs" alt="起源内容" />
+          <!--/ pc端 -->
+          <!-- 手机端 -->
+          <img src="img/origin_contentPhone01.jpg" class="hidden-sm hidden-md hidden-lg" alt="起源内容">
+          <img src="img/origin_contentPhone02.jpg" class="hidden-sm hidden-md hidden-lg" alt="起源内容">
+
+          <!--/ 手机端 -->
+
+          <b><a href="origin.html" class="btn btn-danger" target="_blank">了解更多</a></b>
+          <div class="origin_bg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--加盟店展示-->
+
+  <!--新闻部分-->
+  <section class="news">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center mgt50 mgb40 news-top">
+          <img src="img/index-news.png" alt="新闻板块标题" />
+        </div>
+      </div>
+      <div class="row mgb40">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="img/index.news1.jpg" alt="新闻预览图" />
+            </div>
+            <div class="caption">
+              <h3>尚京集团旗下品牌“金汉亭”荣获渠道建设奥斯卡奖——金锐奖</h3>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;“渠达天下·2017智慧渠道高峰论坛暨第五届金锐奖颁奖盛典”在广州隆重举行。尚京集团总裁韩军先生受邀参加本次活动，与数百名行业优秀企业嘉宾齐聚一堂，共话行业发展的未来，共同见证“金锐奖”的终极揭晓。
+              </p>
+              <p class="p-btn">
+                <a href="newsContent.html" class="btn btn-danger pull-right" role="button" target="_blank">了解详情</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="img/index.news1.jpg" alt="新闻预览图" />
+            </div>
+            <div class="caption">
+              <h3>尚京集团旗下品牌“金汉亭”荣获渠道建设奥斯卡奖——金锐奖</h3>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;“渠达天下·2017智慧渠道高峰论坛暨第五届金锐奖颁奖盛典”在广州隆重举行。尚京集团总裁韩军先生受邀参加本次活动，与数百名行业优秀企业嘉宾齐聚一堂，共话行业发展的未来，共同见证“金锐奖”的终极揭晓。
+              </p>
+              <p class="p-btn">
+                <a href="newsContent.html" class="btn btn-danger pull-right" role="button" target="_blank">了解详情</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="img/index.news1.jpg" alt="新闻预览图" />
+            </div>
+            <div class="caption">
+              <h3>尚京集团旗下品牌“金汉亭”荣获渠道建设奥斯卡奖——金锐奖</h3>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;“渠达天下·2017智慧渠道高峰论坛暨第五届金锐奖颁奖盛典”在广州隆重举行。尚京集团总裁韩军先生受邀参加本次活动，与数百名行业优秀企业嘉宾齐聚一堂，共话行业发展的未来，共同见证“金锐奖”的终极揭晓。
+              </p>
+              <p class="p-btn">
+                <a href="newsContent.html" class="btn btn-danger pull-right" role="button" target="_blank">了解详情</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-zf">
+
+    <!--底部内容-->
+    <footer-copy></footer-copy>
+
+    <!--底部悬浮-->
+    <float-bot></float-bot>
+
+  </div>
+  <!--     <footer>
+      <div class="container foot_link">
+        <div class="row foot_link_top">
+          <div class="col-md-6 text-center hidden-xs">
+            <h5>友情链接：</h5>
+            <p>
+              <a href="#" target="_blank">尚京集团</a><a href="#" target="_blank">尚京集团</a><a href="#"
+                target="_blank">尚京集团</a><a href="#" target="_blank">尚京集团</a>
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <i><img src="img/logo.png" alt="" /></i>
+          </div>
+        </div>
+
+        <div class="row foot_link_copyRight">
+          <div class="col-md-12 text-center">
+            <span>公司地址： 安徽省合肥市滨湖新区金融港A3座16层</span>
+            <span>安徽尚京品牌管理股份有限公司版权所有 皖ICP备18022821号-2</span>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+  <!-- <div class="bottom_float navbar-fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center col-xs-12">
+            <i></i>
+            <h5>
+              &nbsp;加盟热线：400-9977-258
+            </h5>
+            <a href="contact_us.html" class="bottom_float_hidden pull-right">
+              <h5>立即预约</h5>
+            </a>
+            <i class="pull-right"></i>
+          </div>
+          <div class="col-md-8 hidden-xs">
+            <form class="form-inline" id="navbar-fixed-bottom-form">
+              <div class="form-group col-lg-5 index_md-3 align-self-center">
+                <label for="bottom_float_name" class="pr-2"
+                  >姓名&nbsp;:&nbsp;&nbsp;</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="bottom_float_name"
+                  placeholder="您的姓名"
+                />
+              </div>
+              <div class="form-group col-lg-5 index_md-3 align-self-center">
+                <label for="bottom_float_phone" class="pr-2"
+                  >手机&nbsp;:&nbsp;&nbsp;</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="bottom_float_phone"
+                  placeholder="您的手机号"
+                />
+              </div>
+              <div class="col-lg-2 index_md-6 align-self-center">
+                <button
+                  type="button"
+                  onclick="submitPhone()"
+                  class="btn btn-warning"
+                >
+                  在线预约
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/2.2.2Vue.min.js"></script>
+  <script src="js/zf-vue-index.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
